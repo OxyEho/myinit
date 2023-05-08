@@ -1,0 +1,40 @@
+First three tasks:
+valera    4975  4972  0 21:08 ?        00:00:00 /bin/sleep 5
+valera    4989  4952  0 21:08 pts/12   00:00:00 grep /bin/sleep 5
+valera    4976  4972  0 21:08 ?        00:00:00 /bin/sleep 10
+valera    4991  4952  0 21:08 pts/12   00:00:00 grep /bin/sleep 10
+valera    4974  4972  0 21:08 ?        00:00:00 /mnt/c/Users/valer/init/myinit/test 1 2 3
+valera    4993  4952  0 21:08 pts/12   00:00:00 grep test
+Three tasks after kill second task:
+valera    4975  4972  0 21:08 ?        00:00:00 /bin/sleep 5
+valera    5004  4952  0 21:08 pts/12   00:00:00 grep /bin/sleep 5
+valera    4995  4972  0 21:08 ?        00:00:00 /bin/sleep 10
+valera    5006  4952  0 21:08 pts/12   00:00:00 grep /bin/sleep 10
+valera    4974  4972  0 21:08 ?        00:00:00 /mnt/c/Users/valer/init/myinit/test 1 2 3
+valera    5008  4952  0 21:08 pts/12   00:00:00 grep test
+One task running:
+valera    5035  4972  0 21:09 ?        00:00:00 /bin/sleep 3
+valera    5037  4952  0 21:09 pts/12   00:00:00 grep /bin/sleep 3
+myinit stared
+task 0 started /mnt/c/Users/valer/init/myinit/test with pid: 4974
+task 1 started /bin/sleep with pid: 4975
+task 2 started /bin/sleep with pid: 4976
+task 2 finished with status: 15
+task 2 started /bin/sleep with pid: 4995
+task 0 finished with status: 0
+task 0 started /mnt/c/Users/valer/init/myinit/test with pid: 5010
+task 1 finished with status: 0
+task 1 started /bin/sleep with pid: 5022
+task 0 finished with status: 0
+task 0 started /mnt/c/Users/valer/init/myinit/test with pid: 5030
+task 0 finished with status: 0
+task 0 started /mnt/c/Users/valer/init/myinit/test with pid: 5031
+task 1 finished with status: 0
+task 1 started /bin/sleep with pid: 5032
+task 2 finished with status: 0
+task 2 started /bin/sleep with pid: 5033
+task 0 killed
+task 1 killed
+task 2 killed
+Handle SIGHUP. Restarting myinit
+task 0 started /bin/sleep with pid: 5035
