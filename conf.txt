@@ -1,2 +1,0 @@
-/tmp/test_bin 3 /tmp/in_test /tmp/out_test
-/bin/sleep 10 /tmp/in /tmp/out
